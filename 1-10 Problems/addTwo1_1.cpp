@@ -1,19 +1,22 @@
+
 /*Add Two numbers using pass by value reference function
- which returns integer
+ which is void
 */
+
 #include<bits/stdc++.h>
 using namespace std;
 
-int sum(int x,int y){
-    int total = x+y;
-    return total;
+void sum(int x, int y){
+    int total = 0;
+    total = x + y;
+    cout<<total<<'\n';
 }
 
 int main(){
 
-    int x,y;
+    int x, y;
     cin>>x>>y;
-    cout<<sum(x,y)<<'\n';
+    sum(x,y);
 
     return 0;
 }
